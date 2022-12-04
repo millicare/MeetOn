@@ -1,0 +1,16 @@
+[package]
+name = "meeton"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = true
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+smart-contract = "0.2.0"
+smart-contract-macros = "0.2.0"
